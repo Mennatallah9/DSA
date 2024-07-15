@@ -34,7 +34,7 @@ class SinglyLinkedStack:
     def length(self):
         return self.size
     
-    def top(self):
+    def peek(self):
         if self.isEmpty():
             raise "Error: stack is empty"
         return self.head.val
@@ -48,7 +48,7 @@ if __name__ == '__main__':
     stack.stackPush(3)
     stack.stackPush(4)
     stack.stackPush(5)
-    print(stack.top())
+    print(stack.peek())
     print(stack.stackPop())
     print(stack.length())
     print(stack.isEmpty())

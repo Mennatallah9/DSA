@@ -27,7 +27,7 @@ class ArrayStack:
             count+=1
         return count
     
-    def top(self):
+    def peek(self):
         if self.isEmpty():
             raise "Error: Stack is empty"
         return self.data[-1]
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     stack.stackPush(5)
     print(stack.stackPop())
     print(stack.isFull())
-    print(stack.top())
+    print(stack.peek())
     print(stack.length())
 
     
