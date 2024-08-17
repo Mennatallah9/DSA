@@ -15,12 +15,13 @@ def binarySearch(arr, target):
     return -1 # target not found
 
 # test
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-target = 5
-print(binarySearch(arr, target)) # 4
-arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-target = 5
-print(binarySearch(arr, target)) # -1
-arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-target = 100
-print(binarySearch(arr, target)) # 9
+if __name__=="__main__":
+    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    target = 5
+    print(binarySearch(arr, target)) # 4
+    arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    target = 5
+    print(binarySearch(arr, target)) # -1
+    arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    target = 100
+    print(binarySearch(arr, target)) # 9
